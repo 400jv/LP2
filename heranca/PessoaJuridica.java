@@ -14,6 +14,7 @@ public class PessoaJuridica extends Cliente {
     this.nomeFantasia = nomeFantasia;
   }
 
+  @Override
   public void ImprimirDados() {
     System.out.println("Nome: " + super.getNome());
     System.out.println("Endereço: " + super.getEndereco());

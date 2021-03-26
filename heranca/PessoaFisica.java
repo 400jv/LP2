@@ -6,6 +6,7 @@ public class PessoaFisica extends Cliente {
     this.cpf = cpf;
   }
 
+  @Override
   public void ImprimirDados() {
     System.out.println("Nome: " + super.getNome());
     System.out.println("Endereço: " + super.getEndereco());

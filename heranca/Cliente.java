@@ -1,4 +1,4 @@
-public class Cliente {
+public abstract class Cliente {
   private String nome;
   private String endereco;
   private String telefone;
@@ -8,6 +8,8 @@ public class Cliente {
     this.endereco = endereco;
     this.telefone = telefone;
   }
+
+  public abstract void ImprimirDados();
 
   public String getNome() {
     return nome;
