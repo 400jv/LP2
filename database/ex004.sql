@@ -1,0 +1,5 @@
+/* Ex D */
+
+SELECT *
+FROM FUNCIONARIOS
+WHERE telefone IS NULL;
