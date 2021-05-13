@@ -1,7 +1,12 @@
 /* Ex 2 */
 
-SELECT nome, idade
-FROM Ator AS a
-INNER JOIN Novela AS n
-ON a.id = n.Personagem_id
-WHERE n.nome = 'Ser Estranho';
+SELECT
+  a.nome,
+  a.idade
+FROM
+  Ator as a
+  INNER JOIN Personagem AS p ON p.ator_id = a.id
+  INNER JOIN Novela_personagem AS np ON np.Personagem_id = p.id
+  INNER JOIN Novela as n ON n.id = np.Personagem_id
+WHERE
+  n.nome = 'Ser Estranho'
