@@ -70,4 +70,15 @@ public class Baralho {
     cartas.set(card1_index, cartas.get(card2_index));
     cartas.set(card2_index, copyCard1);
   }
+
+  public Carta daCarta() {
+    if (cartas.isEmpty()) return new Carta();
+
+    int indexTopCard = cartas.size() - 1;
+    Carta topCard = cartas.get(indexTopCard);
+
+    if (topCard == null) return new Carta();
+
+    return topCard;
+  }
 }
