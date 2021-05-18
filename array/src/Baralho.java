@@ -81,4 +81,8 @@ public class Baralho {
 
     return topCard;
   }
+
+  public boolean temCarta() {
+    return !cartas.isEmpty();
+  }
 }
