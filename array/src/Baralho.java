@@ -3,7 +3,6 @@ import java.util.List;
 import java.lang.Math;
 
 public class Baralho {
-  private static final int CARTAS_SIZE = 55;
   public final List<Carta> cartas;
   private String[] naipes = { "Paus", "Ouros", "Espadas", "Copas" };
   
@@ -51,8 +50,8 @@ public class Baralho {
     // Para 13 cartas aleatórias no array
     for (int i = 0; i < 13; i++) {
       // sorteia dois indexs
-      int card1 = (int) (Math.random() * CARTAS_SIZE);
-      int card2 = (int) (Math.random() * CARTAS_SIZE);
+      int card1 = (int) (Math.random() * cartas.size() +1);
+      int card2 = (int) (Math.random() * cartas.size() +1);
 
       // E chama o método swap passando os dois indexs
       swapCard(card1, card2);
