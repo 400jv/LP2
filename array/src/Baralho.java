@@ -47,4 +47,28 @@ public class Baralho {
     }
   }
 
+  public void embaralha() {
+    // Para 13 cartas aleatórias no array
+    for (int i = 0; i < 13; i++) {
+      // sorteia dois indexs
+      int card1 = (int) (Math.random() * CARTAS_SIZE);
+      int card2 = (int) (Math.random() * CARTAS_SIZE);
+
+      // E chama o método swap passando os dois indexs
+      swapCard(card1, card2);
+    }
+  }
+  
+  // Método para pegar dois index e trocar os valores nesses indexs
+  private void swapCard(int card1_index, int card2_index) {
+    String card1Nome = cartas.get(card1_index).getNome();
+    String card1Naipe = cartas.get(card1_index).getNaipe();
+    
+    Carta copyCard1 = new Carta();
+    copyCard1.setNome(card1Nome);
+    copyCard1.setNaipe(card1Naipe);
+    
+    cartas.set(card1_index, cartas.get(card2_index));
+    cartas.set(card2_index, copyCard1);
+  }
 }
