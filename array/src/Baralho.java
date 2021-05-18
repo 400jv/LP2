@@ -50,8 +50,8 @@ public class Baralho {
     // Para 13 cartas aleatórias no array
     for (int i = 0; i < 13; i++) {
       // sorteia dois indexs
-      int card1 = (int) (Math.random() * cartas.size() +1);
-      int card2 = (int) (Math.random() * cartas.size() +1);
+      int card1 = (int) (Math.random() * cartas.size());
+      int card2 = (int) (Math.random() * cartas.size());
 
       // E chama o método swap passando os dois indexs
       swapCard(card1, card2);
