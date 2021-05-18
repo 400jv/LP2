@@ -85,4 +85,10 @@ public class Baralho {
   public boolean temCarta() {
     return !cartas.isEmpty();
   }
+
+  public void imprimeBaralho() {
+    for (Carta carta: cartas) {
+      System.out.print("| " + carta.getNome() + " " + carta.getNaipe() + " | ");
+    }
+  }
 }
