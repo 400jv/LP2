@@ -3,6 +3,7 @@ import java.util.List;
 import java.lang.Math;
 
 public class Baralho {
+  private static final int CARTAS_SIZE = 55;
   public final List<Carta> cartas;
   private String[] naipes = { "Paus", "Ouros", "Espadas", "Copas" };
   
