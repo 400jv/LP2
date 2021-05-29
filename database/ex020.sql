@@ -1,7 +1,8 @@
 /* Ex 02 */
 
 SELECT 
-	d.nome AS Departamento, CONCAT(e.primeiro_nome, ' ', e.ultimo_nome) AS Gerente
+	d.nome AS Departamento, 
+  CONCAT(e.primeiro_nome, ' ', e.ultimo_nome) AS Gerente
 FROM 
 	departamento AS d
   INNER JOIN gerente_departamento AS gd ON d.id = gd.id_departamento
