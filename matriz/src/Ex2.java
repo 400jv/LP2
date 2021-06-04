@@ -7,7 +7,7 @@ public class Ex2 {
     System.out.println("2)");
 
     for (int i = 0; i < matriz.length; i++) {
-      for (int j = 0; j < 4; j++) {
+      for (int j = 0; j < matriz[i].length; j++) {
         matriz[i][j] = (int) (Math.random() * 100);
       }
     }
