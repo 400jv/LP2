@@ -8,7 +8,7 @@ public class Ex3 {
     System.out.println("Ex 3)");
 
     for (int i = 0; i < matriz.length; i++) {
-      for (int j = 0; j < 5; j++) {
+      for (int j = 0; j < matriz[i].length; j++) {
         matriz[i][j] = lerDouble(i, j, input);
       }
     }
