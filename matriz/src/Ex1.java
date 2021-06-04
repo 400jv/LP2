@@ -20,7 +20,7 @@ public class Ex1 {
     Util.printExln('B');
 
     for (int i = 0; i < matrizB.length; i++) {
-      for (int j = 0; j < 10; j++) {
+      for (int j = 0; j < matrizB[i].length; j++) {
         matrizB[i][j] = (int) Math.pow(j, 2);
       }
     }
@@ -29,7 +29,7 @@ public class Ex1 {
     Util.printExln('C');
 
     for (int i = 0; i < matrizC.length; i ++) {
-      for (int j = 0; j < 6; j++) {
+      for (int j = 0; j < matrizC[i].length; j++) {
         matrizC[i][j] = i;
       }
     }
@@ -38,7 +38,7 @@ public class Ex1 {
     Util.printExln('D');
 
     for (int linha = 0; linha < matrizD.length; linha++) {
-      for (int coluna = 0; coluna < 6; coluna++) {
+      for (int coluna = 0; coluna < matrizD[linha].length; coluna++) {
         // Se a linha for positva, então recebe -1 se não 0
         matrizD[linha][coluna] = linha % 2 == 0 ? -1 : 0;
       }
